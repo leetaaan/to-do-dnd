@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Tag from "../tag/Tag";
-
+import Logo from "../../assets/logo-black.png"
 import "./TaskForm.css";
 const TaskForm = ({ setTasks }) => {
   const [data, setData] = useState({
@@ -44,7 +44,7 @@ const TaskForm = ({ setTasks }) => {
 
   return (
     <header className="app_header">
-      <img className="logo" src="src/assets/logo-black.png" alt="" />
+      <img className="logo" src={Logo} alt="" />
       <form onSubmit={handleSubmit}>
         <div className="task">
           <input
